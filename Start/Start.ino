@@ -2,7 +2,7 @@
 #include "write.h"
 void setup() {
   Serial.begin(9600);
-  
+  pinMode(9, OUTPUT);
   
   if (!SD.begin(10)) {
     Serial.println("initialization failed!");

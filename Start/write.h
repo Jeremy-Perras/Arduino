@@ -1,6 +1,7 @@
 #ifndef WRITE_H
   #define WRITE_H
   #include "variables.h"
+  #include "Controle.h"
   void write(){
       t = now();
       myFile = SD.open("test.txt", FILE_WRITE);
@@ -16,6 +17,15 @@
       myFile.print(" ");
       myFile.print(cel);
       myFile.close();
+      Serial.println(cel);
+      Serial.println(Controle(cel));
+      if(Controle(cel)){
+        digitalWrite(9, HIGH);
+      }
+      else
+      { digitalWrite(9, LOW);
+
+      }
       delay(1000);
   }
 #endif
