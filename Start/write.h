@@ -18,14 +18,12 @@
       myFile.print(cel);
       myFile.close();
       Serial.println(cel);
-      Serial.println(Controle(cel));
-      if(Controle(cel)){
+      if(Controle(cel))
         digitalWrite(9, HIGH);
-      }
       else
-      { digitalWrite(9, LOW);
+        digitalWrite(9, LOW);
 
-      }
+      
       delay(1000);
   }
 #endif
