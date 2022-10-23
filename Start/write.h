@@ -22,8 +22,6 @@
         digitalWrite(9, HIGH);
       else
         digitalWrite(9, LOW);
-
-      
       delay(1000);
   }
 #endif
